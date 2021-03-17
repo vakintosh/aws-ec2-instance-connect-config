@@ -136,7 +136,11 @@ Again, please note that if you do not specify instance types then all supported 
 
 ## Building RPM/Debian Packaging
 
-Verify that you have those packages installed : "build-essential devscripts debhelper"
+Install tools to create debian packages:
+`$ sudo apt install build-essential devscripts debhelper`
+
+Install tools to create rpm packages:
+`$ sudo yum install rpm-build`
 
 If desired, this scripting can be added to an EC2 instance for further testing.  A convenience pair of scripts - bin/make_rpm.sh and bin/make_deb.sh - have been provided to quickly build test packages.
 
